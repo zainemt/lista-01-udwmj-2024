@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<header>
+    <h1 id="header-tittle">CALCULADORA</h1>
+    <div id="botoes-cor">
+        <button value="b1" id="b1" class="changeColor" onclick='changeColor(value)'></button>
+        <button value="b2" id="b2" class="changeColor" onclick='changeColor(value)'></button>
+        <button value="b3" id="b3" class="changeColor" onclick='changeColor(value)'></button>
+        <button value="b4" id="b4" class="changeColor" onclick='changeColor(value)'></button>
+    </div>
+</header>
+
+<body id="body-color1">
+    <div id="itens">
+        <div id="calculadora">
+            <input type="text" id="display" disabled>
+            <div id="botoes">
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("1")'>1</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("2")'>2</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("3")'>3</button>
+                <button style="background-color: #FE9A2E; color: white;" class="botao" onclick='displayView(" * ")'>X</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("4")'>4</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("5")'>5</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("6")'>6</button>
+                <button style="background-color: #FE9A2E; color: white;" class="botao" onclick='displayView(" / ")'>/</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("7")'>7</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("8")'>8</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("9")'>9</button>
+                <button style="background-color: #FE9A2E; color: white;" class="botao" onclick='displayView(" - ")'>-</button>
+                <button style="background-color: #424242; color: white;" class="botao" onclick='displayReset()'>C</button>
+                <button style="background-color: #848484; color: white;" class="botao" onclick='displayView("0")'>0</button>
+                <button style="background-color: #424242; color: white;" class="botao" onclick='displayView(".")'>,</button>
+                <button style="background-color: #FE9A2E; color: white;" class="botao" onclick='displayView(" + ")'>+</button>
+                <button style="background-color: #FE9A2E; color: white;" class="botao" onclick='calcResult()'>=</button>
+            </div>
+        </div>
+        <div id="memoriaCalculo">
+            <input type="text" id="memory" disabled class="memory">
+            
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
